@@ -9,12 +9,13 @@
    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
-<body class="dark">
+<body>
+
   <nav>
 <div class="container-fluid">
   <div class="row">
-
     <div class="col">
       <div class="navbar-brand align-items-center">
         <button class="rounded-circle m-0
@@ -24,7 +25,7 @@
         <i class="bi bi-list"></i>
       </button>
         <img width="32" height="30" class="d-inline-block" src="/images/174883.png" alt="">
-     <span>YouTube</span>
+     <span class="fw-bolder">YouTube</span>
       </div>
     </div>
 
@@ -39,7 +40,7 @@
           </span>
         </span>
        <span>
-        <button class="border-0 bg-white btn-lg">
+        <button class="border-0 bg-white btn-lg mx-1">
           <i class="bi bi-mic-fill"></i>
          </button>
        </span>   
@@ -72,49 +73,120 @@
 </div>
 </nav>
 
-<!-- left-section -->
-<section>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-1">
-      <div>
-      <div class=" text-center">
-        <button class="border-0 btn-lg bg-white pb-0 mt-4">
-          <i class="bi bi-house-door-fill"></i>
-        </button>
-        <small class="p-2 fw-light">Home</small>
+<div class="sidebar">
+  <div>
+    <button class="border-0 btn-l bg-white pb-0 mt-2">
+      <i class="bi bi-house-door-fill"></i>
+    </button>
+    <small class="fw-light">Home</small>
+  </div>
+  <div>
+    <button class="border-0  bg-white pb-0 mt-4">
+      <i class="bi bi-film"></i>
+    </button> 
+      <small class=" fw-light">Shorts</small>
+   </div> 
+   <div>
+    <button class="border-0 bg-white pb-0 mt-4">
+      <i class="bi bi-collection-play"></i>
+    </button>
+    <small class=" fw-light">Music</small>
+   </div> 
+   <div >
+    <button class="border-0  bg-white pb-0 mt-4">
+      <i class="bi bi-file-play"></i>
+    </button>
+    <small class=" fw-light">Library</small>
+   </div>
+
+  </div>
+
+
+   <div class="content ">
+    <div class="container"></div>
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 bg-danger">
+        <div>
+          <img class="img-thumbnail" src="/images/1.webp" alt="">
+        </div>
       </div>
-
-       <div class="text-center">
-        <button class="border-0 btn-lg bg-white pb-0 mt-4">
-          <i class="bi bi-film"></i>
-        </button> 
-          <small class="p-2 fw-light">Shorts</small>
-       </div>
-
-         <div class="text-center ">
-          <button class="border-0 btn-lg bg-white pb-0 mt-4">
-            <i class="bi bi-collection-play"></i>
-          </button>
-          <small class="p-2 fw-light">Music</small>
-         </div>
-
-         <div class="text-center">
-          <button class="border-0 btn-lg bg-white pb-0 mt-4">
-            <i class="bi bi-file-play"></i>
-          </button>
-          <small class="p-2 fw-light">Library</small>
-         </div>
-       </div>
+      <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 bg-info">
+        <div>
+          <img class="img-thumbnail" src="/images/1.webp" alt="">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 bg-danger">
+        <div>
+          <img class="img-thumbnail" src="/images/1.webp" alt="">
+        </div>
+      </div>
+      <div class="col-md-6 colsm-12 col-lg-4 col-xl-3 bg-info">
+        <div>
+          <img class="img-thumbnail" src="/images/1.webp" alt="">
+        </div>    
+        </div>
+      
       </div>
     </div>
+   </div>
+
+ <!-- Main-section  -->
+ <!-- <section class="pt-3" style="padding-left: px;">
+<div class="container-fluid">
+  <div class="row">
+    <div >
+
+      <button class="text-white border-0 fw-light mx-2" 
+      style="background-color: black;
+       padding:3px 10px 3px 10px;border-radius: 7px;">
+       <small> All</small>
+      </button>
+
+      <button class=" border-0 fw-light " 
+      style="padding:3px 10px 3px 10px;border-radius: 7px;">
+      <small>    Pearle Maaney  </small>
+      </button>
+
+      <button class=" border-0 fw-light mx-2" 
+      style="padding:3px 10px 3px 10px;border-radius: 7px;">
+      <small>       Music      </small>
+      </button>
+
+      <button class=" border-0 fw-light" 
+      style="padding:3px 10px 3px 10px;border-radius: 7px;">
+      <small>       Comedy      </small>
+      </button>
+
+      <button class=" border-0 fw-light mx-2" 
+      style="padding:3px 10px 3px 10px;border-radius: 7px;">
+      <small>       Dramedy      </small>
+      </button>
+
+      <button class=" border-0 fw-light" 
+      style="padding:3px 10px 3px 10px;border-radius: 7px;">
+      <small>       Cooking Shows  </small>
+      </button>
+
+      <button class=" border-0 fw-light mx-2" 
+      style="padding:3px 10px 3px 10px;border-radius: 7px;">
+      <small>       Mixes      </small>
+      </button>
+
+      <button class=" border-0 fw-light" 
+      style="padding:3px 10px 3px 10px;border-radius: 7px;">
+      <small>       Sitcoms      </small>
+      </button>
+
+      <button class=" border-0 fw-light" 
+      style="padding:3px 10px 3px 10px;border-radius: 7px;">
+      <small>       Tourist  Destinatio     </small>
+      </button>
+      
+    </div>
   </div>
-</section>
+</div>
+</section>  -->
 
-<!-- Main-section -->
-<section>
-
-</section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
