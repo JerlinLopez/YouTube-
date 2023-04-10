@@ -1,9 +1,9 @@
 
 body {
   margin:0;
-  position: fixed;
+  /* position: fixed; */
+  font-family: Arial, Helvetica, sans-serif;
 
-  /* font-family: "Lato", sans-serif; */
 }
 
 .sidebar {
@@ -18,9 +18,14 @@ body {
 }
 
 div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
+  /* margin-left: 200px; */
+  padding: 1px 20px;
   margin-top: 50px;
+}
+
+.img-thumbnail{
+  border-radius: 15px;
+  border: none;
 }
 
 /* 100 vara */
@@ -29,6 +34,32 @@ div.content {
     /* width: 100%; */
     height: 100%;
     position: relative;
+  }
+}
+
+.profile-icon{
+  width: 35px;
+}
+.thumbnail-text{
+  font-size: 15px;
+  line-height: 0;
+}
+.nav{
+  overflow: hidden;
+  top:0;
+ /* position: fixed;  */
+ background-color: #ffffff;
+
+}
+.icon{
+  width: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+@media screen and (min-width:769px){
+  div.content{
+    margin-left: 200px;
   }
 }
 
